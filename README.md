@@ -7,7 +7,10 @@ Opt-in public roster for Alpha colonists who used the OccupationMars template.
 
 ## What belongs here
 
-Each opted-in colonist = **one GitHub Issue**:
+1. **One GitHub Issue** per opted-in colonist (roster row)
+2. **ID card PNG** under [`cards/`](./cards/) — **required** on opt-in  
+   Naming: `MC-####-<classname>-id-card.png`  
+3. Optional: welcome letter / avatar PNGs in `cards/`
 
 | Field | Required |
 |-------|----------|
@@ -16,8 +19,9 @@ Each opted-in colonist = **one GitHub Issue**:
 | Class | yes |
 | Occupation title | yes |
 | Role family (public taxonomy) | yes |
+| ID card file in `cards/` + link in Issue | **yes** |
 | Public X handle | optional |
-| Link to ID card post / image | optional |
+| Welcome letter in `cards/` | optional |
 
 ## What must NEVER be posted
 
@@ -31,13 +35,15 @@ Each opted-in colonist = **one GitHub Issue**:
 After **Manifest Assignment** + Founding Colonist ID + Welcome letter, OccupationMars asks once.
 
 If you say yes:
-1. Bot opens (or drafts) an Issue with the **Founding Colonist** template, **or** open one manually:  
+1. Add your ID card to `cards/` (owner/write access: direct commit; others: PR, or attach PNG on the Issue until a PR lands)
+2. Open an Issue with the **Founding Colonist** template linking the card:  
    https://github.com/gavinmcnicol/occupationmars-founding-manifest/issues/new?template=colonist.yml
-2. Optional: post your ID on X with `#OccupationMars` `#FoundingManifest`
+3. Optional: post your ID on X with `#OccupationMars` `#FoundingManifest`
 
 ## Owner view
 
-Browse **Issues** (filter by labels `alpha`, `founding-colonist`). This is the worldwide Alpha roster until Beta shared hub exists.
+- **Issues** = roster list  
+- **`cards/`** = ID gallery  
 
 ## Fiction note
 
