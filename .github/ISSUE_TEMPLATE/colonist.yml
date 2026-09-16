@@ -1,0 +1,60 @@
+name: Founding Colonist
+description: Opt-in Alpha roster entry (no résumé, no selfie)
+title: "MC-???? · Class · Alias"
+labels: ["alpha", "founding-colonist"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Public Founding Manifest only. **Do not** paste résumés, selfies, or private contact info.
+  - type: input
+    id: alias
+    attributes:
+      label: Alias / preferred name
+      placeholder: e.g. Flux Archivist alias
+    validations:
+      required: true
+  - type: input
+    id: mc_id
+    attributes:
+      label: Founding Colonist ID
+      placeholder: MC-0417
+    validations:
+      required: true
+  - type: input
+    id: class
+    attributes:
+      label: Martian class
+      placeholder: Archive
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Occupation title
+      placeholder: Flux Archivist
+    validations:
+      required: true
+  - type: input
+    id: family
+    attributes:
+      label: Role family (public taxonomy)
+      placeholder: Research / R&amp;D
+    validations:
+      required: true
+  - type: input
+    id: x_handle
+    attributes:
+      label: Public X handle (optional)
+      placeholder: "@yourhandle"
+  - type: input
+    id: card_link
+    attributes:
+      label: ID card post or image URL (optional)
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent
+      options:
+        - label: I opt in to list these public fields on the Founding Manifest (not my résumé or selfie).
+          required: true
